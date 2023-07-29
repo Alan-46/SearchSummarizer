@@ -1,4 +1,4 @@
-# SearchSummarizer
+# Search Summarizer
 
 All of us are used to having to open google or any other search engine and gather information on any topic. But to get the information we need, we need to visit multiple websites, read many articles, research papers, etc, which can be a tedious job. And to add to the list of problems, the information is often scattered and we might get the information we need only by collecting information from multiple websites. This means that we have to manually jump from website to website and check if it contains the information we are looking for, which is time consuming. This can be optimized with the help of automation and AI. 
 
