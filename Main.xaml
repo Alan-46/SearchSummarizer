@@ -1,0 +1,331 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1153.3333333333333,2204" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="116">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Sequence - 1" sap:VirtualizedContainerService.HintSize="550.6666666666666,2139.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_22">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="final_string" />
+      <Variable x:TypeArguments="x:String" Name="SomeText" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="AllThoseBS" />
+      <Variable x:TypeArguments="x:Boolean" Name="ImmExists" />
+      <Variable x:TypeArguments="njl:JObject" Name="final_object" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="508.6666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[final_string]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <Sequence DisplayName="Sequence - 2" sap:VirtualizedContainerService.HintSize="508.6666666666667,918.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="UserQuery" />
+        <Variable x:TypeArguments="sd:DataTable" Name="ExtractedTable" />
+        <Variable x:TypeArguments="x:String" Name="ExtractedString" />
+        <Variable x:TypeArguments="x:Int32" Name="properLinks">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" Value="1" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="466.6666666666667,22" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter your Qeury Here" Title="Query">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[UserQuery]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Assign sap:VirtualizedContainerService.HintSize="466.6666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[UserQuery]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[UserQuery.Replace(" ", "+")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.6666666666667,300.6666666666667" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[&quot;http://www.google.com/search?q=&quot; + UserQuery]">
+        <ui:OpenBrowser.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractedTable]" DisplayName="Extract Structured Data 'DIV  rso'" ExtractMetadata="&lt;extract&gt;&lt;column exact='0' name='title' attr='text' name2='url' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="10" NextLinkSelector="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Next' parentid='pnnext' tableRow='1' tag='SPAN' /&gt;" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe6ef0d3-fef6-45a8-81f2-e9461475d62d" InformativeScreenshot="900cd2600b3e28da7fab56d9ab1ad5ac" Selector="&lt;webctrl id='rso' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenBrowser.Body>
+      </ui:OpenBrowser>
+      <ui:OutputDataTable DataTable="[ExtractedTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="466.6666666666667,80.66666666666667" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[ExtractedString]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="466.6666666666667,80.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[ExtractedString]" />
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractedTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="284,80.66666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="816,1227.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="774,1135.3333333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[CurrentRow(1).toString]">
+                <ui:OpenBrowser.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="740,1032.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY'" sap:VirtualizedContainerService.HintSize="698,155.33333333333334" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f9" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f0349eb6-5b2e-4b1f-80d2-b48cf02ceab7" InformativeScreenshot="f7c5855e002202e76c0c603e9e0f2b08" Selector="&lt;webctrl tag='BODY' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SendHotkey.Target>
+                      </ui:SendHotkey>
+                      <ui:GetFullText IgnoreHidden="{x:Null}" ContinueOnError="True" DisplayName="Get Full Text 'grouping'" sap:VirtualizedContainerService.HintSize="698,106" sap2010:WorkflowViewState.IdRef="GetFullText_2">
+                        <ui:GetFullText.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e4cd354-40dd-444a-aa07-89c35e2e7230" InformativeScreenshot="19353a98c69e04a67e04102e6ed5d803" Selector="&lt;wnd app='msedge.exe' cls='*' title='*' /&gt;&lt;ctrl name='*' role='document' /&gt;&lt;ctrl name='Immersive Reader' role='document' /&gt;&lt;ctrl role='grouping' /&gt;" TimeoutMS="20000" WaitForReady="COMPLETE" />
+                        </ui:GetFullText.Target>
+                        <ui:GetFullText.Text>
+                          <OutArgument x:TypeArguments="x:String">[SomeText]</OutArgument>
+                        </ui:GetFullText.Text>
+                      </ui:GetFullText>
+                      <If Condition="[String.IsNullOrEmpty(SomeText)]" sap:VirtualizedContainerService.HintSize="698,537.3333333333334" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="326,172.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="284,80.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Not the one we want&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="326,376.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="284,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[properLinks]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[properLinks+1]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="284,80.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[SomeText]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="284,62" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[final_string]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[final_string+SomeText]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="698,22" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                        <ui:IfElseIf.ConditionBlocks>
+                          <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                            <ui:IfElseIfBlock BlockType="If" Condition="[properLinks=2]">
+                              <ui:IfElseIfBlock.Then>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                </Sequence>
+                              </ui:IfElseIfBlock.Then>
+                            </ui:IfElseIfBlock>
+                          </sc:BindingList>
+                        </ui:IfElseIf.ConditionBlocks>
+                      </ui:IfElseIf>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:OpenBrowser.Body>
+              </ui:OpenBrowser>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+    </Sequence>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="508.6666666666667,80.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;done&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message box" sap:VirtualizedContainerService.HintSize="508.6666666666667,80.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[final_string]" />
+    <uma:MLSkills ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" StatusCode="{x:Null}" ApiKey="d4c7b108-e85a-44f7-96ce-fa82d90c9c2c" Connection="Endpoint" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="508.6666666666667,394.6666666666667" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[final_string]" JsonResponse="[final_string]" NextPageNum="2" RefreshList="False" SkillURL="https://ai-uipath.deskover.com/public/mlskills/d2b02125-cfaf-4367-a209-0d42e5f701aa/c50e0416-240d-4ac6-adb4-bf05deb6a4da/textsummarizationskill" TimeOutMs="120000" TotalCount="1">
+      <uma:MLSkills.MLSkillList>
+        <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+          <x:Reference>__ReferenceID0</x:Reference>
+        </scg:List>
+      </uma:MLSkills.MLSkillList>
+      <uma:MLSkills.SelectedMLSkill>
+        <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath.deskover.com/mlskills/d2b02125-cfaf-4367-a209-0d42e5f701aa/c50e0416-240d-4ac6-adb4-bf05deb6a4da/textsummarizationskill" AccountId="d2b02125-cfaf-4367-a209-0d42e5f701aa" Description="" Id="29f1c7d2-5888-4298-868c-e2c2ea6003e3" InputDescription="Text to be summarized as a string. On small inputs (less than 300 characters), the model will just return the unaltered input" InputType="JSON" Name="TextSummarizationSkill" OutputDescription="Summarized text as a string." ProjectId="f297d3da-06d4-4f47-bfa1-b527290ec716" TenantId="c50e0416-240d-4ac6-adb4-bf05deb6a4da" />
+      </uma:MLSkills.SelectedMLSkill>
+    </uma:MLSkills>
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="output.txt" sap:VirtualizedContainerService.HintSize="508.6666666666667,190" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[final_string]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message box" sap:VirtualizedContainerService.HintSize="508.6666666666667,80.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[final_string]" />
+  </Sequence>
+</Activity>
